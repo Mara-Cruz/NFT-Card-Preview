@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+    background-color: hsl(215,55%,11%);
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit";
+    font-size:16px;
+    color: hsl(215, 51%, 70%);
+}
+
+main, .card_img, .pricing {
+    width:275px;
+}
+
+main{
+    background-color:hsl(214,50%,16%);
+    padding:25px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 37px 25px rgba(8,18,31,1);
+}
+
+.card_img{
+    position: relative;
+    height: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 45%;
+    left: 43.8%;
+    width: 40px; 
+}
+
+.card_img:hover .overlay, .icon {
+    opacity: 1;
+}
+
+.title{
+    font-size: 18px;;
+    font-weight:bold;
+    letter-spacing: 1.1px;
+    margin: 25px 0 16px;
+}
+
+.info{
+    line-height: 1.5rem;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    letter-spacing: -0.3px;
+}
+
+.etherium_icon{
+    height:18px;
+    margin:0 8px 0 0;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+    margin: 0 93px 0 0;
+}
+
+.clock_icon{
+    margin:0 7px 0 0;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+    margin: 0 0 18px 0;
+}
+
+.creator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: -0.3px;
+}
+
+.creator_img{
+    height:32px;
+    border:solid 2px white;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: hsl(215, 51%, 70%);
+}
+
+a.another_color{
+    color: white;
+}
+
+a:link{
+    color:hsl(215, 51%, 70%);
+    text-decoration: none;
+}
+
+a:hover, a:focus, a.another_color:hover, a.another_color:focus{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+/*Media queries are commented out as the desired effect cannot be achieved on GitHub Pages. 
+Flexbox was used to configure the position of elements responsively. */
+
+/*@media screen and (min-width: 768px), screen and (min-width: 1440px){
+    html{
+        font-size:18px;
+    }
+
+    main, .card_img, .pricing {
+        width:310px;
+    }
+
+    .card_img{
+        height: 310px;
+    }
+
+    .title{
+        font-size:20px;
+    }
+
+    .price{
+        margin: 0 110px 0 0;
+    }
+}*/
